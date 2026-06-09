@@ -1,0 +1,146 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/stock-detail/[code]",
+      "regex": "^/stock\\-detail/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcode": "nxtPcode"
+      },
+      "namedRegex": "^/stock\\-detail/(?<nxtPcode>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/strategy/[scanId]",
+      "regex": "^/strategy/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPscanId": "nxtPscanId"
+      },
+      "namedRegex": "^/strategy/(?<nxtPscanId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/alerts",
+      "regex": "^/alerts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/alerts(?:/)?$"
+    },
+    {
+      "page": "/holdings",
+      "regex": "^/holdings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/holdings(?:/)?$"
+    },
+    {
+      "page": "/icon.svg",
+      "regex": "^/icon\\.svg(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon\\.svg(?:/)?$"
+    },
+    {
+      "page": "/market-cloud",
+      "regex": "^/market\\-cloud(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/market\\-cloud(?:/)?$"
+    },
+    {
+      "page": "/market-overview",
+      "regex": "^/market\\-overview(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/market\\-overview(?:/)?$"
+    },
+    {
+      "page": "/notes",
+      "regex": "^/notes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/notes(?:/)?$"
+    },
+    {
+      "page": "/precision",
+      "regex": "^/precision(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/precision(?:/)?$"
+    },
+    {
+      "page": "/settings",
+      "regex": "^/settings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings(?:/)?$"
+    },
+    {
+      "page": "/stock-list",
+      "regex": "^/stock\\-list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/stock\\-list(?:/)?$"
+    },
+    {
+      "page": "/strategy",
+      "regex": "^/strategy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/strategy(?:/)?$"
+    },
+    {
+      "page": "/watchlist",
+      "regex": "^/watchlist(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/watchlist(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

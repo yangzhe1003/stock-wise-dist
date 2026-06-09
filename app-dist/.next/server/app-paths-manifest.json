@@ -1,0 +1,18 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/alerts/page": "app/alerts/page.js",
+  "/holdings/page": "app/holdings/page.js",
+  "/icon.svg/route": "app/icon.svg/route.js",
+  "/market-cloud/page": "app/market-cloud/page.js",
+  "/market-overview/page": "app/market-overview/page.js",
+  "/notes/page": "app/notes/page.js",
+  "/page": "app/page.js",
+  "/precision/page": "app/precision/page.js",
+  "/settings/page": "app/settings/page.js",
+  "/stock-detail/[code]/page": "app/stock-detail/[code]/page.js",
+  "/stock-list/page": "app/stock-list/page.js",
+  "/strategy/[scanId]/page": "app/strategy/[scanId]/page.js",
+  "/strategy/page": "app/strategy/page.js",
+  "/watchlist/page": "app/watchlist/page.js"
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="6" fill="#1a1a2e"/>
+  <text x="16" y="22" text-anchor="middle" font-family="system-ui" font-weight="700" font-size="18" fill="#22c55e">S</text>
+  <line x1="4" y1="24" x2="28" y2="24" stroke="#22c55e" stroke-width="1.5" opacity="0.6"/>
+  <line x1="4" y1="28" x2="20" y2="28" stroke="#ef4444" stroke-width="1.5" opacity="0.6"/>
+</svg>
